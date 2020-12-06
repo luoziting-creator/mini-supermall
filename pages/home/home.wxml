@@ -21,7 +21,6 @@
 <!--遍历获取到的list数据 -->
 <view wx:for="{{list}}">{{item.discountPrice}}</view>
 
-
 <!-- 编程范式
   1。命令式编程
   2. 声明式编程
