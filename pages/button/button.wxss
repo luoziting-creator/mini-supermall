@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.preset {
+  color: #fff;
+  background-color: red;
+}
