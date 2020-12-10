@@ -1,0 +1,8 @@
+@import './style//btn.wxss';
+.container {
+  color: yellow;
+  font-size: 33px;
+}
+.content {
+  background-color: purple;
+}

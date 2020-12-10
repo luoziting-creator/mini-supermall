@@ -1,0 +1,8 @@
+.btn {
+  width: 240rpx;
+  height: 72rpx;
+  display: inline-block;
+  font-size: 32rpx;
+  line-height: 72rpx;
+
+}

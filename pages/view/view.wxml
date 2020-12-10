@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+<!-- <text>pages/view/view.wxml</text> -->
+
+
+<!-- 1.view 的基本使用 -->
+<!-- 块级元素独占一行，通常用作容器组件 -->
+<view class="box">哈哈哈</view>
+<!--   2 hover-class 指定按下去的样式类-->
+<!-- 有时候要求传入数字的时候可能会不起效果，可以加上{{}} -->
+<view hover-class="box2" hover-stay-time="{{0}}" >哈哈哈</view>
+<view>
+  <text>111</text>
+  <button>按钮</button>
+</view>
+<!-- 3、hover-stop-propagation 指定是否阻止本节点的祖先节点出现点击态 -->
+<view class="box3"  hover-class="box3-hover">
+  <view hover-stop-propagation hover-class="hover-view" hover-stay-time="{{0}}" class="box2">box1</view>
+</view>

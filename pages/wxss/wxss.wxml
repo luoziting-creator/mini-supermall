@@ -1,0 +1,51 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- <text>pages/wxss/wxss.wxml</text> -->
+
+
+<!-- 样式的三种写法 -->
+<!-- 1.行内(内联)样式 -->
+<view style="color:blue;font-size:32px">哈哈哈</view>
+
+<!-- 2.页内样式  -->
+
+<view class="box">呵呵呵呵</view>
+
+
+<!-- 3.全局样式 在任何的页面都可以使用-->
+
+<view  class="container">嘿嘿嘿</view>
+
+
+<!-- 4 三种样式作用于同一个组件，是有优先级的 -->
+<!-- 行内样式的优先级最高，其次是页内样式，最后是全局样式 -->
+<view class="content" >1111111111111</view>22
+
+
+<!-- 5 wxss的扩展----尺寸单位 -->
+<!-- 前端也需要进行配置尺寸的适配： em rem  vw wh -->
+
+
+<!-- rpx :可以根据屏幕宽度进行自适应，对规定屏幕宽度为75rpx -->
+<!-- 如在iPhone6上，屏幕宽度为375px   共有750个物理像素，则 750rpx=375px=75物理像素  1rpx=0.5px = 1物理像素 -->
+<!-- iphone6 plus  中 1rpx = 0.552px    iphone5中 1rpx =0.42px    -->
+
+<!-- 开发微信小程序设计师可以用iPhone6作为视觉稿的标准 -->
+<view class="box1">22222222222222222</view>
+<view class="box2">11111111111111111</view>
+
+
+<view class="content1">哈哈哈</view>
+<view class="content2">呵呵呵</view>
+
+<!-- 6  样式导入 -->
+<button class="btn">按钮</button>
+
+<!-- 7 官方样式库 -->
+
+<!-- 使用官方样式库写一个搜索框 -->
+
+
+
+
+
+
