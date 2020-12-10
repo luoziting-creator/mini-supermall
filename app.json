@@ -1,7 +1,12 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "components/my-cpn/my-cpn"
+   
   ],
-  "sitemapLocation": "sitemap75.json"
+  "sitemapLocation": "sitemap75.json",
+  "usingComponents": {
+    "my-cpn":"/components/my-cpn/my-cpn"
+  }
 }

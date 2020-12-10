@@ -1,0 +1,5 @@
+<!--components/my-style/my-style.wxml-->
+<!-- <text>components/my-style/my-style.wxml</text> -->
+<!-- 页面中的样式和组件中的样式默认是不会相互影响的，如果想要相互影响可以在js中传入一个options属性中有一个styleIsolation（隔离）属性， -->
+<view class="title">{{title}}</view>
+<view class="style-content">我是style的内容</view>

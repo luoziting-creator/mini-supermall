@@ -1,3 +1,76 @@
 <!--pages/home/home.wxml-->
 <text class="title">hello world</text>
 <button size="mini">按钮</button>
+<!-- 使用组件的步骤 -->
+<!-- 
+  1. 创建一个components文件夹，自定义一个组件
+  2.在需要使用组件的页面对应的json文件中注册
+  1.2.1 如果在多个页面中都用到的组件，推荐在app.json中注册
+  3.在wxml中使用组件
+-->
+
+<!-- 一.  自定义组件的基本使用 -->
+<my-cpn />
+<my-cpn />
+<my-cpn />
+
+<!-- 二. 自定义组件的样式细节 -->
+<!-- 组件内的class样式和组件外的class样式，默认是有一个隔离效果的
+2. 为了防止样式的错乱，官方不推荐使用id 属性  标签选择器-->
+<my-style />
+
+<!-- 三. 给自定义组件传递数据/样式 -->
+<my-prop title="哈哈哈" titleclass="red"></my-prop>
+<my-prop title="呵呵呵"  titleclass="green"></my-prop>
+<my-prop title="嘿嘿"  titleclass="blue"></my-prop>
+<my-prop ></my-prop>
+
+<!-- 四. 组件内部传递事件 -->
+<view>当前计数：{{counter}}=={{age}}=={{name}}</view>
+<my-event bind:increment="handelEventBtn" >+1</my-event>
+
+<!-- 五.tab-control 的练习 -->
+<w-tab-control title="{{['流行','精选','新款','鞋子']}}" bind:itemClick="tabcontrolclick"></w-tab-control>
+<view>当前的索引值：{{index}}</view>
+<view>当前的title：{{title}}</view>
+<view>-------------------------------</view>
+
+<!-- 六.  直接选中组件修改数据 、调用方法-->
+<my-select class="sel-class" id="sel-id"></my-select>
+<button size="mini" bindtap="handleIncCrementCpn">修改组件内的数据</button>
+<view>-------------------------------</view>
+
+<!-- 七 插槽的使用 -->
+<!-- 7.1 单个插槽使用 -->
+<my-slot >
+  <button size="mini">我是slot插槽中的按钮</button>
+  <slider value="60"></slider>
+</my-slot>
+
+<!-- 7.2 多个插槽的使用 -->
+<!-- 当使用多个插槽的时候，
+  1.需要给每一个插槽取一个名字
+2.必须给components对象中添加添加一个选项options ,在对应的页面中的js中写入 options:{
+    multipleSlots:true,
+
+  },
+
+-->
+<button size="mini" bindtap="handlechangeshow">切换显示</button>
+<view wx:if="{{isShow}}">
+  <my-mslot>
+  <button size="mini" slot="slot2">我是my-mslot插槽中的按钮</button>
+  <slider value="80" slot="slot1"></slider>
+  <text slot="slot3">哈哈哈哈</text>
+</my-mslot>
+</view>
+
+<!-- 使用自定义组件和细节：
+
+  1. 因为wxml节点标签只能是 小写字母  中划线 和下划线的组合，所以自定义组件的标签名也只能包含这些字符，不要使用驼峰命名和其他特殊的字符，可以使用数字
+  2. 自定义组件也是可以引用自定义组件的，饮用方法类似于页面引用自定义组件的方式（使用usingComponents字段）
+  3. 自定义组件和页面所在项目根目录名不能以 "wx-" 为前缀，否则的话会报错
+ 
+-->
+
+

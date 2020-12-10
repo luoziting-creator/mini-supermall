@@ -1,0 +1,8 @@
+<!-- 1.可以在这里写 -->
+<!-- <include src="./nav.wxml"></include> -->
+
+<view>
+  <!-- 2.也可以在这里写 -->
+  <include src="./nav.wxml"></include>
+  <view>标题</view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/scroll/scroll.wxml-->
+<!-- <text>pages/scroll/scroll.wxml</text> -->
+
+<!-- 1. 水平滚动 scroll-x-->
+<scroll-view class="container1" scroll-x>
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- 2.  垂直滚动 scroll-y-->
+<!-- 必须给 scroll-view 设置固定高度-->
+<scroll-view class="container2" scroll-y bindscroll="handleScroll" scroll-top>
+  <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- 3.内置组件共有的属性 -->
+<!--  id  class    style   hidden    data   bind / catch   -->
+
+
+<!-- 1.hidden属性 -->
+<view   hidden="{{true}}">哈哈哈</view>
+<view   hidden>哈哈哈</view>

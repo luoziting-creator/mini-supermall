@@ -1,0 +1,23 @@
+<!--pages/text/text.wxml-->
+<!-- <text>pages/text/text.wxml</text> -->
+
+<!-- 1.基本使用 -->
+<text>Hello World\n</text>
+<text>你好   小程序\n</text>
+<!-- 2. 默认情况下 text中的文本是不能选中 -->
+<text selectable="{{true}}"> hello lzt\n</text>
+<!-- 可以简写成以下形式 -->
+<text selectable> hello lzt\n</text>
+
+<!-- 3.space  决定文本空格大小 -->
+<text>hello world\n</text>
+<text space="nbsp">hello world\n</text>
+<text space="ensp">hello world\n</text>
+<text space="emsp">hello world\n</text>
+
+<!-- 4.decode的属性   是否解码文本 -->
+<text decode>5 &gt; 3</text>
+
+
+
+

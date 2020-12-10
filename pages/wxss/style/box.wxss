@@ -1,0 +1,14 @@
+.box {
+  color: red;
+  font-size: 33px;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+.box2 {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: red;
+}

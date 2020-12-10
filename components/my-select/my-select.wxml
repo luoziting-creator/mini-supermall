@@ -1,0 +1,4 @@
+<!--components/my-select/my-select.wxml-->
+<!-- <text>components/my-select/my-select.wxml</text> -->
+<view>---------------------------------------------------</view>
+<view>组件内的计数：{{counter}}</view>
