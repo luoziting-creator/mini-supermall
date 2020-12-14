@@ -1,10 +1,19 @@
-// pages/about/about.js
+// pages/profile/profile.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    orderList:[
+      {icon:'message.png',text:'我的消息'},
+      {icon:'pointer.png',text:'积分商城'},
+      {icon:'vip.png',text:'会员卡'},
+    ],
+    serverList :[
+      {icon:'cart.png',text:'我的购物车'},
+      {icon:'app.png',text:'下载购物APP'},
+    ]
 
   },
 
